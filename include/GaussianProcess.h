@@ -230,7 +230,7 @@ protected:
     /*
      * Inversion of the kernel matrix. TODO: should go into a base class
      */
-    virtual MatrixType InvertKernelMatrix(const MatrixType &K, InversionMethod inv_method, bool stable=false) const;
+    virtual MatrixType InvertKernelMatrix(const MatrixType &K, InversionMethod inv_method = FullPivotLU, bool stable=false) const;
 
 	/*
 	 * Bring the label vectors in a matrix form Y,
